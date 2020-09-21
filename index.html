@@ -1,16 +1,58 @@
 <!-- Youtube Ui Clone -->
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head> 
-    <title> Youtube</title>
-    <meta charset="utf-8">
-    <meta name="auhtor" content="Lucas Alves Dos Santos"/>
-    <meta name="description" content="Recriando a interface do youtube"/>
-    <meta name="keywords" content="HTML5,CSS3,JS,Front-end, Web-Designer"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      
-  </body>
+
+<head>
+  <title> Youtube</title>
+  <meta charset="utf-8">
+  <meta name="auhtor" content="Lucas Alves Dos Santos" />
+  <meta name="description" content="Recriando a interface do youtube" />
+  <meta name="keywords" content="HTML5,CSS3,JS,Front-end, Web-Designer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <div class="main-header-content">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div><!--hamburger-->
+        <div class="logo-youtube">
+          <img src="assets/img/favicon/youtubelogoM.jpg" alt="Logo do youtube"/>
+        </div><!--logo-youtube-->
+
+        <div class="input">
+          <input type="text" name="search"  placeholder="Pesquisar"/>
+          <button><i class="fas fa-search"></i></button>
+        </div><!--input-->
+
+        <div class="buttons">
+            <i class="fas fa-video" title="Criar"></i>
+            <i class="fas fa-th" title="Aplicativos"></i>
+            <i class="far fa-bell"></i>
+            <div class="user"> L </div>
+        </div><!--buttons-->
+
+      </div><!--main-header-content-->
+    </header><!--main-header-->
+
+  </div><!--main-container-->
+
+  <nav class="navegacao">
+    <ul>
+      <li> <i class="fas fa-home"></i> <span>  Home</span></li>
+      <li><i class="fas fa-fire"></i><span>Em Alta</span></li>
+      <li><i class="fas fa-play"></i><span> Inscriçoes </span></li>
+      <li><i class="fas fa-book"></i><span> Biblioteca </span></li>
+    </ul>
+
+  </nav><!--navegacao-->
+
+</body>
 </html>
