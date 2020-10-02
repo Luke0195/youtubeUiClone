@@ -12,142 +12,100 @@ html{
 }
 
 body{
-  font-size:1.6rem;
+  font-size: 1.6rem;
 }
 
 html,body{
   height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  
 }
+
 
 .main-container{
-  width: 100%;
-  
-}
+  width:100%;
 
-.main-header{
-  width: 100%;
-  position: fixed;
-  height: 8rem;
+ .main-header-content{
+   width:100%;
+   padding:0.6rem 2%;
+   display: flex;
+   align-items: center;
 
-  .main-header-content{
-    padding: 1rem 2%;
-    display: flex;
-    align-items: center;
-  }
-
-  .hamburger{
-    width:2rem;
-    height:2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
    
-  }
+   
+ }
 
-   .line{
-    width:100%;
-    height:2px;
-    background-color:rgba(0,0,0,0.6);
+ .hamburger{
+   font-size:2rem;
+   line-height:3.3rem;
+   color:lightgray;
 
-  }
+ .img-logo{
+   width: 12rem;
+   height: 7rem;
+   margin-left: 3rem;
+ } 
+  .img-logo img{
+   width: 100%;
+   height: 100%;
+   }
 
-  .logo-youtube{
-    width:10rem;
-    height: 4rem;
-    margin:0 2rem;
-  }
+   .input{
+     flex:1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
 
-  .logo-youtube img{
-    width:inherit;
-    height: inherit;
-  }
+   .input input{
+     width: 50rem;
+     height:3rem;
+     border: 1px solid rgb(161, 156, 156);
+     border-right: 0;
+     padding-left:0.3rem;
+     
+   }
+   
+   .input i{
+     padding-left: 0.8rem;
+     border: 1px solid rgb(161, 156, 156);
+     height: 3rem;
+     width:3.5rem;
+     padding-top:0.5rem;
+     color: rgb(161, 156,156)
+   }
 
-  .input{
-    flex:1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    
-  }
+   .buttons{
+     width:15rem;
+     display:flex;
+     justify-content: space-evenly;
+     align-items: center;
+     font-size:1.7rem;
+     line-height:2.7rem;
+     color: rgb(161, 156,156);
+     cursor: pointer;
+   
+   
+   }
 
-  .input input{
-    width: 40rem;
-    height: 3rem;
-    border:1px solid #ccc;
-    padding-left: 0.8rem;
-    cursor: pointer;
-    font-size:1.3rem;
-    line-height: 2.3rem;
-  }
+   .buttons i{
+     margin:0.6rem; 
+      transition: color 1s ease-out;
+   }
 
-  .input input:focus{
-    border: 2px solid rgb(64, 64, 182);
-  }
+   .buttons i:hover{
+     color:red;
+   }
 
-  .input button{
-    font-size:1.3rem;
-    font-weight: 300;
-    color:#ccc;
-    border: 1px solid #ccc;
-    padding: 0 1.5rem;
-  }
+   .buttons .user{
+     background-color:#7159c1;
+     padding:0 1rem;
+     border-radius: 50%;
+     font-weight: 700;
+     color:#fff;
+     cursor: pointer;
+   }
+   
+  
 
-
-
-
-  .buttons{
-    width:15rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .buttons i{
-    font-size:1.8rem;
-    line-height:2.8rem;
-    color:rgb(155, 146, 146);
-    cursor: pointer;
-  }
-
-  .buttons .user{
-    background-color: rgb(182, 10, 182);
-    width:3rem;
-    text-align: center;
-    color:#FFF;
-    font-weight: 600;
-    border-radius: 50%;
-    padding:0.3rem;
-    cursor: pointer;
-  }
 }
-
-.navegacao{
-  position: fixed;
-  top:80px;
-  left:10px;
-
-  height: 100vh;
-}
-
-.navegacao ul{
-  display: flex;
-  flex-direction: column;
-}
-
-.navegacao ul li i,span{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size:1rem;
-  margin: 1rem 0;
-  color:rgb(155, 146, 146);
-}
-
-.navegacao ul li i{
-  font-size:1.8rem;
-}
-
