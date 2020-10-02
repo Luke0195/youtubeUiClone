@@ -168,4 +168,27 @@ html, body {
   font-size: 1rem;
   margin: 0.3rem;
 }
+
+.sidebar-menu {
+  width: 18rem;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.sidebar-menu.show-menu {
+  left: -18rem;
+  padding: 0;
+  background-color: gray;
+}
+
+.welcome {
+  width: 100%;
+  border-bottom: 1px solid #c3c3c3;
+  padding: 3rem 0;
+}
 /*# sourceMappingURL=styles.css.map */
