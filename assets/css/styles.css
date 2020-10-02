@@ -26,9 +26,14 @@ html, body {
   width: 100%;
 }
 
-.main-container .main-header-content {
+.main-header {
   width: 100%;
-  padding: 0.6rem 2%;
+  height: 6rem;
+}
+
+.main-header .main-header-container {
+  width: 100%;
+  padding: 0.8rem 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,24 +42,24 @@ html, body {
           align-items: center;
 }
 
-.main-container .hamburger {
-  font-size: 2rem;
+.main-header .menu-hamburger {
+  font-size: 2.3rem;
   line-height: 3.3rem;
-  color: #b8b8b8;
+  font-weight: 300;
 }
 
-.main-container .img-logo {
+.main-header .youtube-text {
   width: 12rem;
-  height: 7rem;
-  margin-left: 3rem;
+  height: 5rem;
+  margin-left: 2rem;
 }
 
-.main-container .img-logo img {
-  width: 100%;
-  height: 100%;
+.main-header .youtube-text img {
+  width: inherit;
+  height: inherit;
 }
 
-.main-container .input {
+.main-header .input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -67,27 +72,36 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-.main-container .input input {
-  width: 50rem;
-  height: 3rem;
-  border: 1px solid #a19c9c;
+.main-header .input input {
+  width: 45rem;
+  height: 2.5rem;
+  border: 1px solid #c3c3c3;
   border-right: 0;
-  padding-left: 0.3rem;
-}
-
-.main-container .input i {
   padding-left: 0.8rem;
-  border: 1px solid #a19c9c;
-  height: 3rem;
-  width: 3.5rem;
-  padding-top: 0.5rem;
-  color: #a19c9c;
 }
 
-.main-container .buttons {
-  width: 15rem;
+.main-header .input i {
+  border: 1px solid #c3c3c3;
+  height: 2.5rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2rem;
+  color: #ccc;
+}
+
+.main-header .icons {
+  width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,28 +111,61 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.7rem;
-  line-height: 2.7rem;
-  color: #a19c9c;
+  font-size: 1.8rem;
+  color: #c3c3c3;
   cursor: pointer;
 }
 
-.main-container .buttons i {
-  margin: 0.6rem;
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
+.main-header .icons i {
+  margin: 0 0.8rem;
 }
 
-.main-container .buttons i:hover {
-  color: red;
+.main-header .icons i:hover {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  color: #E50914;
 }
 
-.main-container .buttons .user {
+.main-header .icons span {
   background-color: #7159c1;
-  padding: 0 1rem;
-  border-radius: 50%;
-  font-weight: 700;
+  font-weight: bold;
   color: #fff;
-  cursor: pointer;
+  padding: 0 0.8rem;
+  border-radius: 50%;
+}
+
+.sidebar {
+  width: 8rem;
+  height: calc(100vh - 6rem);
+  padding: 1rem;
+  text-align: center;
+}
+
+.sidebar .menu-item.active {
+  color: #E50914;
+}
+
+.sidebar .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0;
+}
+
+.sidebar .menu-item i {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.sidebar .menu-item span {
+  font-size: 1rem;
+  margin: 0.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
